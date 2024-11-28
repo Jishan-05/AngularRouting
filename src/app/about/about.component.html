@@ -1,0 +1,19 @@
+<p>about works!</p>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt iusto quis eum, molestias natus molestiae explicabo error asperiores harum odit. Voluptate sint voluptas incidunt, eligendi mollitia molestias perspiciatis officia numquam?
+<br>
+<!-- <a routerLink="../">Go to home </a> -->
+<!-- <a routerLink="../../">Go to home </a> -->
+<!-- <a routerLink="./home">Go to home </a> -->
+<a routerLink="/home" class="btn btn-primary">Go to home </a>
+
+
+<h2>Edit Page</h2>
+<form>
+  <label for="name">Name:</label>
+  <input
+    id="name"
+    type="text"
+    (input)="hasUnsavedChanges = true"
+  />
+  <button type="submit">Save</button>
+</form>

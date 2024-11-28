@@ -1,0 +1,22 @@
+h2 {
+    color: #4caf50;
+  }
+  form {
+    margin-top: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  input {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }

@@ -1,0 +1,33 @@
+<!-- <p>employees-lst works!</p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ea hic voluptatem nobis rerum ipsam. Veniam quidem unde est quo vitae nam esse optio nisi, vel rem, incidunt nesciunt tenetur
+
+<h1>List of emploee</h1>
+<table class="table table-success table-bordered table-striped">
+  <tr class="table-primary">
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+  </tr>
+  <tr (click)="EmpClick(emp)" *ngFor="let emp of myemployees">
+    <td class="table-success">{{emp['name']}}</td>
+    <td class="table-success">{{emp['email']}}</td>
+    <td class="table-success">{{emp['phone']}}</td>
+  </tr>
+
+</table>
+
+ -->
+
+ <p>employees-lst works!</p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ea hic voluptatem nobis rerum ipsam. Veniam quidem unde est quo vitae nam esse optio nisi, vel rem, incidunt nesciunt tenetur.
+
+
+<h1>List of Employees</h1>
+<ul class="list-group">
+  <li class="list-group-item active">
+    <strong>Id</strong>|<strong>Name</strong> | <strong>Email</strong> | <strong>Phone</strong>
+  </li>
+  <li class="list-group-item" [class.bg-danger]="isSelected(emp)" (click)="EmpClick(emp)" *ngFor="let emp of myemployees">
+  {{ emp['id']}}| {{emp['name']}} | {{emp['email']}} | {{emp['phone']}}
+  </li>
+</ul>
